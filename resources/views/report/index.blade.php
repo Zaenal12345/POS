@@ -79,6 +79,15 @@
         @media (min-width: 768px) {
             .report-table-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
         }
+        /* Responsive font untuk mobile */
+        @media (max-width: 640px) {
+            .report-card { padding: 14px !important; }
+            .report-card [style*="font-size: 20px"] { font-size: 15px !important; }
+            .report-card [style*="font-size: 16px"] { font-size: 13px !important; }
+            .report-card [style*="font-size: 11px"] { font-size: 10px !important; }
+            .card-header h3 { font-size: 14px !important; }
+            .btn { font-size: 11px !important; padding: 6px 10px !important; }
+        }
     </style>
 
     <div class="report-table-grid">

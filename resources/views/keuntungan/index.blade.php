@@ -143,6 +143,11 @@
     <style>
         @media (max-width: 640px) {
             .summary-cards { grid-template-columns: 1fr !important; }
+            .summary-cards .card { padding: 12px !important; }
+            .summary-cards [style*="font-size:18px"] { font-size: 14px !important; }
+            .summary-cards [style*="font-size:11px"] { font-size: 10px !important; }
+            .card-header h3 { font-size: 14px !important; }
+            .btn { font-size: 11px !important; padding: 6px 10px !important; }
         }
     </style>
 </x-admin-layout>

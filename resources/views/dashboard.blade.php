@@ -60,6 +60,15 @@
             .stat-card { padding: 24px !important; }
             .stat-card [style*="font-size: 20px"] { font-size: 24px !important; }
         }
+        /* Responsive font untuk mobile */
+        @media (max-width: 480px) {
+            .stat-card { padding: 14px !important; }
+            .stat-card [style*="font-size: 20px"] { font-size: 15px !important; }
+            .stat-card [style*="font-size: 11px"] { font-size: 10px !important; }
+            .stat-card i { font-size: 18px !important; }
+            .stat-card > div > div:first-child { width: 36px !important; height: 36px !important; }
+            .card-header h3 { font-size: 14px !important; }
+        }
     </style>
 
     <div class="card">

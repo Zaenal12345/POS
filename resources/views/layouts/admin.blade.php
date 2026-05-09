@@ -166,6 +166,25 @@
         /* Scrollable table container */
         .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 10px; border: 1px solid #e2e8f0; }
         .table-scroll table { min-width: 600px; }
+
+        /* Global Responsive Card Fonts */
+        @media (max-width: 640px) {
+            .card { border-radius: 10px; }
+            .card-header { padding: 12px 14px !important; }
+            .card-header h3 { font-size: 13px !important; }
+            .card-body { padding: 14px !important; }
+            .btn { padding: 6px 12px !important; font-size: 12px !important; }
+            .form-input, .form-select { padding: 8px 12px !important; font-size: 13px !important; }
+            .form-label { font-size: 12px !important; }
+            tbody td { font-size: 12px !important; padding: 10px !important; }
+            thead th { font-size: 10px !important; padding: 8px 10px !important; }
+            .pagination li a, .pagination li span { min-width: 32px !important; height: 32px !important; font-size: 12px !important; }
+        }
+        @media (max-width: 480px) {
+            .card-header { padding: 10px 12px !important; }
+            .card-header h3 { font-size: 12px !important; }
+            .card-body { padding: 12px !important; }
+        }
     </style>
 </head>
 <body<?php if(session('success')): ?> data-flash-success="<?= htmlspecialchars(session('success'), ENT_QUOTES, 'UTF-8') ?>"<?php endif; ?><?php if(session('error')): ?> data-flash-error="<?= htmlspecialchars(session('error'), ENT_QUOTES, 'UTF-8') ?>"<?php endif; ?><?php if($errors->any()): ?> data-flash-errors="1"<?php endif; ?>>

@@ -235,6 +235,25 @@
             div[style*="grid-template-columns:repeat(4"] {
                 grid-template-columns: 1fr !important;
             }
+            /* Responsive font untuk wallet cards */
+            .wallet-card {
+                padding: 14px !important;
+            }
+            .wallet-card [style*="font-size:26px"] {
+                font-size: 16px !important;
+            }
+            .wallet-card [style*="font-size:12px"] {
+                font-size: 10px !important;
+            }
+            .wallet-card [style*="font-size:20px"] {
+                font-size: 16px !important;
+            }
+            .wallet-card [style*="font-size:11px"] {
+                font-size: 9px !important;
+            }
+            .card-header h3 { font-size: 14px !important; }
+            h2 { font-size: 16px !important; }
+            p[style*="font-size:13px"] { font-size: 11px !important; }
         }
     </style>
 </x-admin-layout>
